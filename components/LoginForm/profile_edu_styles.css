@@ -1,30 +1,28 @@
-/* education_styles.css */
 
-/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #f8f9fa; 
     margin: 0;
 }
 
 .container {
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px; 
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Navbar styles */
+
 .navbar {
     height: 80px;
-    background-color: #0056b3; /* Dark background */
-    color: #fff; /* White text */
+    background-color: #0056b3; 
+    color: #fff; 
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -48,10 +46,10 @@ body {
     color: #fff;
     text-decoration: none;
 }
-/* Sub Navbar styles */
+
 .sub-navbar {
-    background-color: #007bff; /* Dark blue background */
-    color: #fff; /* White text */
+    background-color: #007bff; 
+    color: #fff; 
     padding: 10px 20px;
 }
 
@@ -73,7 +71,7 @@ body {
     font-weight: bold;
 }
 
-/* Section styles */
+
 .section {
     display: none;
 }
@@ -82,7 +80,7 @@ body {
     display: block;
 }
 
-/* Form styles */
+
 form {
     margin-bottom: 20px;
 }
@@ -104,11 +102,11 @@ textarea {
 }
 
 select {
-    appearance: none; /* Remove default arrow */
-    -webkit-appearance: none; /* Safari and Chrome */
-    -moz-appearance: none; /* Firefox */
-    padding-right: 30px; /* Add space for custom arrow */
-    background-image: url('arrow-down.svg'); /* Custom arrow image */
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    padding-right: 30px; 
+    background-image: url('arrow-down.svg'); 
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 20px 20px;

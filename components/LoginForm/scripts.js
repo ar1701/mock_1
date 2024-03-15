@@ -1,4 +1,4 @@
-// EmailInput.js
+
 function EmailInput(value, onChange) {
     return `
       <div class="form-group">
@@ -8,7 +8,7 @@ function EmailInput(value, onChange) {
     `;
   }
   
-  // PhoneInput.js
+
   function PhoneInput(value, onChange) {
     return `
       <div class="form-group">
@@ -18,7 +18,6 @@ function EmailInput(value, onChange) {
     `;
   }
   
-  // NameInput.js
   function NameInput(value, onChange) {
     return `
       <div class="form-group">
@@ -28,7 +27,7 @@ function EmailInput(value, onChange) {
     `;
   }
   
-  // SubmitButton.js
+ 
   function SubmitButton(onClick) {
     return `
       <button type="submit" onclick="${onClick}">
@@ -37,12 +36,11 @@ function EmailInput(value, onChange) {
     `;
   }
   
-  // WelcomeMessage.js
+
   function WelcomeMessage() {
     return '<h2>Welcome to Hack-Match</h2>';
   }
-  
-  // App.js
+
   document.addEventListener("DOMContentLoaded", function() {
     const loginContainer = document.getElementById("login");
     loginContainer.innerHTML = `
@@ -63,38 +61,37 @@ function EmailInput(value, onChange) {
       </div>
     `;
   
-    // Add event listeners for form submission and input changes
     document.getElementById('login-form').addEventListener('submit', handleSubmit);
     document.getElementById('email').addEventListener('input', handleEmailChange);
     document.getElementById('phone').addEventListener('input', handlePhoneChange);
     document.getElementById('name').addEventListener('input', handleNameChange);
   });
   
-  // Define event handlers
+
   function handleEmailChange(event) {
-    // Handle email input change
+    
     const emailValue = event.target.value;
-    // Do something with emailValue...
+ 
   }
   
   function handlePhoneChange(event) {
-    // Handle phone number input change
+ 
     const phoneValue = event.target.value;
-    // Do something with phoneValue...
+   
   }
   
   function handleNameChange(event) {
-    // Handle name input change
+
     const nameValue = event.target.value;
-    // Do something with nameValue...
+ 
   }
   
   function handleSubmit(event) {
     event.preventDefault();
-    // Handle form submission
+
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const name = document.getElementById('name').value;
-    // Do something with email, phone, and name...
+
   }
   
