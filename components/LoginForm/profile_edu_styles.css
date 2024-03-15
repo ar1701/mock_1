@@ -1,0 +1,129 @@
+/* education_styles.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    margin: 0;
+}
+
+.container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    height: 80px;
+    background-color: #0056b3; /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Sub Navbar styles */
+.sub-navbar {
+    background-color: #007bff; /* Dark blue background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+}
+
+.sub-navbar-nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.sub-navbar-nav li {
+    margin-right: 20px;
+}
+
+.sub-navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-navbar-nav a.active {
+    font-weight: bold;
+}
+
+/* Section styles */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Safari and Chrome */
+    -moz-appearance: none; /* Firefox */
+    padding-right: 30px; /* Add space for custom arrow */
+    background-image: url('arrow-down.svg'); /* Custom arrow image */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
