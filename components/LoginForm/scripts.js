@@ -53,10 +53,10 @@ function EmailInput(value, onChange) {
           ${NameInput('', 'handleNameChange(event)')}
             ${EmailInput('', 'handleEmailChange(event)')}
             ${PhoneInput('', 'handlePhoneChange(event)')}
-            
             ${SubmitButton('handleSubmit(event)')}
           </form>
         </div>
+        <div class="line-partition"></div> 
         <div class="right-section">
           ${WelcomeMessage()}
         </div>
